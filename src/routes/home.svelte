@@ -1,8 +1,10 @@
 <script>
     import User from "../components/user.svelte"
 
+    const dataUrl = "https://github.com/kim-ahri/mercenary-server/blob/master/public/userdata.json"
+
     async function getData() {
-        const r = await fetch("/userdata.json")
+        const r = await fetch(dataUrl)
         return await r.json()
     }
 </script>
