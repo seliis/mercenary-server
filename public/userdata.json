@@ -1,0 +1,57 @@
+[
+    {
+        "name": "NineTailedFox",
+        "balance": 15240,
+        "record": {
+            "air": 21,
+            "ground": 5,
+            "sortie": 20,
+            "killed": 3,
+            "aircraft": "F-16C"
+        }
+    },
+    {
+        "name": "Miho",
+        "balance": 13750,
+        "record": {
+            "air": 16,
+            "ground": 34,
+            "sortie": 17,
+            "killed": 6,
+            "aircraft": "F-14A"
+        }
+    },
+    {
+        "name": "KimAhri",
+        "balance": 12420,
+        "record": {
+            "air": 12,
+            "ground": 27,
+            "sortie": 23,
+            "killed": 10,
+            "aircraft": "Mirage 2000C"
+        }
+    },
+    {
+        "name": "NastyVixen",
+        "balance": 10800,
+        "record": {
+            "air": 9,
+            "ground": 16,
+            "sortie": 14,
+            "killed": 4,
+            "aircraft": "AJS-37"
+        }
+    },
+    {
+        "name": "DameDame",
+        "balance": 5780,
+        "record": {
+            "air": 2,
+            "ground": 7,
+            "sortie": 2,
+            "killed": 1,
+            "aircraft": "F-5E"
+        }
+    }
+]
