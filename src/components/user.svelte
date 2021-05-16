@@ -67,6 +67,7 @@
         font-family: "Noto Sans KR", sans-serif;
         font-weight: 700;
         font-size: 1.25rem;
+        text-shadow: 1px 1px 3px black;
     }
 
     @media only screen and (max-width: 1600px) {
