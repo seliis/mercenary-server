@@ -42,6 +42,7 @@
         font-size: 1.25rem;
         position: relative;
         height: 50px;
+        margin: 5px;
         width: 100%;
     }
 
@@ -56,5 +57,14 @@
     li {
         list-style: none;
         margin: auto;
+    }
+
+    @media only screen and (max-width: 1600px) {
+        #field {
+            letter-spacing: 3px;
+            font-size: 1rem;
+            width: 1500px;
+            height: 50px;
+        }
     }
 </style>

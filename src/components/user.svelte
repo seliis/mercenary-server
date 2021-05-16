@@ -35,19 +35,21 @@
     #user {
         font-family: "Ubuntu Mono", monospace;
         background-color: #0A0E12;
+        white-space: nowrap;
         position: relative;
         font-size: 1.25rem;
         height: 50px;
+        width: 100%;
         margin: 5px;
     }
 
     ul {
-        display: grid;
         grid-template-columns: repeat(7, 1fr);
         grid-template-rows: 100%;
         position: relative;
-        width: 100%;
+        display: grid;
         height: 100%;
+        width: 100%;
     }
 
     li {
@@ -65,5 +67,17 @@
         font-family: "Noto Sans KR", sans-serif;
         font-weight: 700;
         font-size: 1.25rem;
+    }
+
+    @media only screen and (max-width: 1600px) {
+        #user {
+            font-size: 1.25rem;
+            width: 1500px;
+            height: 50px;
+        }
+
+        #name {
+            font-size: 1rem;
+        }
     }
 </style>
