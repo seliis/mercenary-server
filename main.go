@@ -5,6 +5,7 @@ import (
 	"encoding/json"
 	"fmt"
 	"os"
+	"sort"
 	"strconv"
 
 	"github.com/gofiber/fiber/v2"
@@ -52,6 +53,10 @@ func makeJson() {
 			data = append(data, user)
 		}
 	}
+
+	sort.Slice(data, func(i, j int) bool {
+		return data[i].Balance > data[j].Balance
+	})
 
 	proc, err := json.Marshal(data)
 
