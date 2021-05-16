@@ -21,14 +21,14 @@
                 </div>
             </div>
             <div id="secondary">
-                <div id="air" class="desc-data">
-                    Air : {air}
+                <div id="air" class="sec-data">
+                    AIR: {air}
                 </div>
-                <div id="ground" class="desc-data">
-                    Ground : {ground}
+                <div id="ground" class="sec-data">
+                    GND: {ground}
                 </div>
-                <div id="killed" class="desc-data">
-                    Killed : {killed}
+                <div id="killed" class="sec-data">
+                    KIA: {killed}
                 </div>
             </div>
         </div>
@@ -68,8 +68,9 @@
 
     #desc {
         display: grid;
-        grid-template-columns: 50% 50%;
+        grid-template-columns: 75% 25%;
         grid-template-rows: 100%;
+        font-family: "Ubuntu Mono", monospace;
     }
 
     #name {
@@ -89,16 +90,16 @@
     }
 
     #aircraft {
-        font-size: 3rem;
+        font-size: 3.5rem;
         font-weight: 700;
         text-align: center;
         padding: 1rem;
     }
 
     #sortie {
-        font-size: 1.5rem;
+        font-size: 1.75rem;
         font-weight: 700;
-        letter-spacing: 3px;
+        letter-spacing: 1px;
         color: #ADFF2F;
     }
 
@@ -118,7 +119,7 @@
         flex-direction: column;
         align-items: flex-start;
         justify-content: space-around;
-        font-size: 1.5rem;
+        font-size: 2rem;
         text-transform: uppercase;
         letter-spacing: 2px;
         font-weight: 700;
@@ -137,7 +138,7 @@
             padding: 0 30px;
             background: linear-gradient(135deg, #C33864 0%, #822A99 50%, #1E2670 100%);
             border-top-right-radius: 10px;
-            border-top-left-radius: 10px;
+            border-bottom-left-radius: 0;
         }
 
         #desc {
@@ -155,7 +156,7 @@
         }
 
         #balance {
-            font-size: 1rem;
+            font-size: 1.25rem;
             font-weight: 700;
             color: #FFD700;
             margin: 0;
@@ -164,12 +165,13 @@
         }
 
         #aircraft {
-            font-size: 1rem;
+            font-size: 1.5rem;
             padding: 5px 0;
         }
 
         #sortie {
-            font-size: 0.5rem;
+            font-size: 1rem;
+            letter-spacing: 0;
         }
 
         #primary {
@@ -177,7 +179,12 @@
         }
 
         #secondary {
-            font-size: 0.75rem;
+            font-size: 1rem;
+            font-weight: 700;
+        }
+
+        .sec-data {
+            padding: 5px 0;
         }
     }
 </style>

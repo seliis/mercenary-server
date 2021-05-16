@@ -61,10 +61,15 @@
     }
 
     @media only screen and (max-width: 1600px) {
+        main {
+            grid-template-rows: 50px 1fr;
+        }
+
         h1 {
             font-size: 1rem;
         }
     }
 
     @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@700&display=swap');
 </style>
