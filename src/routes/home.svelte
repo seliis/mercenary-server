@@ -10,13 +10,13 @@
 <div id="home">
     {#await getData() then a}
         {#each a as v}
-            <User name={v.name}
-                  balance={v.balance}
-                  aircraft={v.record.aircraft}
-                  air={v.record.air}
-                  ground={v.record.ground}
-                  sortie={v.record.sortie}
-                  killed={v.record.killed}
+            <User name={v.Name}
+                  balance={v.Balance}
+                  aircraft={v.Aircraft}
+                  air={v.Air}
+                  ground={v.Ground}
+                  sortie={v.Sortie}
+                  killed={v.Killed}
             />
         {/each}
     {/await}
