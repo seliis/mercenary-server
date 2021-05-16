@@ -75,13 +75,12 @@ func makeJson() {
 }
 
 func main() {
-	makeJson()
-
 	app := fiber.New()
 
-	app.Static("/", "./build")
+	app.Static("/", "./web")
 
 	app.Get("/userdata.json", func(c *fiber.Ctx) error {
+		makeJson()
 		return c.SendFile("./userdata.json")
 	})
 
